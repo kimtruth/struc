@@ -44,7 +44,7 @@ func (b binaryFallback) Pack(buf []byte, val reflect.Value, options *Options) (i
 }
 
 func (b binaryFallback) Unpack(r io.Reader, val reflect.Value, options *Options) error {
-	var order binary.ByteOrder = binary.BigEndian
+	var order binary.ByteOrder = binary.LittleEndian
 	if options.Order != nil {
 		order = options.Order
 	}
