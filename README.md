@@ -31,8 +31,8 @@ Struct tag format
 Endian formats
 ----
 
- - `big` (default)
- - `little`
+ - `big`
+ - `little` (default)
 
 Recognized types
 ----
